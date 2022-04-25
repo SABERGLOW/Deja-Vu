@@ -11,8 +11,8 @@ import { map } from 'rxjs/operators';
 
 export class AzureFaceApiDataService {
   response: any = [];
-  private endpoint = "https://waliullah-faceapi-instance.cognitiveservices.azure.com/";
-  private key1 = "9e61bba1d780434da369fe58324a3c62";
+  private endpoint = "https://waliullah-faceapi-instance.cognitiveservices.azure.com/"; // add your own Endpoint URL here
+  private key1 = "thisIsAPlaceHolderHeHe"; // add your own key here 
 
   /**
    * The URL for the face detection API.       
