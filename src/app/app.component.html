@@ -1,0 +1,66 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div>
+    <a class="navbar-brand me-2 mb-1 d-flex align-items-center" routerLink="/detect">
+      <img src="../assets/images/Deja-Vu.png" height="50" alt="" loading="lazy"
+        style="margin-top: 2px; margin-right: 10px; margin-left: 10px;" />
+      <!-- To make the brand text disappear on smaller screens "d-none d-sm-block"-->
+      <small class="d-none d-sm-block">Deja-Vu</small>
+    </a>
+  </div>
+
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-navbar"
+      (click)="centered.toggle()" aria-controls="toggle-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="toggle-navbar" mdbCollapse #centered="mdbCollapse">
+      <!-- Center elements -->
+      <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+        <li class="nav-item">
+        <li class="nav-item">
+          <a class="btn-grad btn-primary" routerLink="/detect" role="button">Face Detection</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="btn-grad btn-primary" routerLink="/train" role="button">Model Training</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn-grad btn-primary" routerLink="/identify" role="button">Model Testing</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="btn-grad btn-primary" href="https://github.com/SABERGLOW/Deja-Vu" target="_blank"
+            rel="noopener noreferrer" role="button">About</a>
+        </li>
+
+      </ul>
+      <!-- Center elements -->
+    </div>
+
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link d-sm-flex align-items-sm-center" href="https://github.com/SABERGLOW" target="_blank"
+          rel="noopener noreferrer">
+          <img src="https://avatars.githubusercontent.com/u/62393901" class="rounded-circle" height="40" alt=""
+            loading="lazy" style="margin-right: 10px;" />
+          <!-- To make the dev name text disappear on smaller screens "d-none d-sm-block"-->
+          <strong class="d-none d-sm-block ms-1">Wali Ullah</strong>
+        </a>
+      </li>
+    </ul>
+    <!-- Right elements -->
+
+
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<router-outlet></router-outlet>

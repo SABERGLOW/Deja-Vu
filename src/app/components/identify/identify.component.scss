@@ -1,0 +1,64 @@
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+img {
+    border-radius: 15px;
+    padding: 1px;
+}
+
+/*Here we are again creating all the classes and will going to use in HTML file*/
+.container {
+    padding-top: 20px;
+}
+
+.only-logo {
+    padding-bottom: 3em;
+}
+
+.wrapper {
+    position: relative;
+}
+
+
+.upload-btn-wrapper {
+    margin-top: 5px;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.result {
+    padding-top: 1em;
+    padding-bottom: 50px;
+    align-self: start;
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #ff76b4 0%, #66f1ff 51%, #ff76b4 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #262626;
+    box-shadow: 0 0 20px #ffffff;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

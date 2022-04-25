@@ -1,0 +1,55 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+
+<div class="container">
+  <div class="only-logo">
+    <!--ngid is known as Selector such as conditional statement that return true and false : angular language-->
+    <div *ngIf="url; else elseBlock1">
+      <div class="wrapper">
+        <img id="pic" [src]="url" height="400" width="400" /><br />
+        <div *ngIf="faceApiResponse">
+          <app-rectangle
+            [faceApiResponse]="faceApiResponse"
+            [height]="getHeight()"
+            [width]="getWidth()"
+          ></app-rectangle>
+        </div>
+      </div>
+    </div>
+
+    <!--Assiging the png file at the place of face detection-->
+    <ng-template #elseBlock1>
+      <img
+        src="http://placehold.jp/262626/ffffff/400x400.png?text=Upload%20an%20image%20to%20Detect%20a%20Face&css=%7B%22border-radius%22%3A%2215px%22%7D"
+        alt="Upload Files"
+        height="400"
+        width="400"
+      />
+    </ng-template>
+  </div>
+
+  <!--Designing the Upload a file button -->
+  <div class="upload-btn-wrapper">
+    <a
+      class="btn-grad btn-primary col-2 mx-auto"
+      role="button"
+      (click)="uploader.click()"
+    >
+      Upload Image
+      <input
+        type="file"
+        accept="image/*"
+        #uploader
+        (change)="handleFileInput($event)"
+        multiple
+      />
+    </a>
+  </div>
+
+  <!--Designing the Response in table  file Format -->
+  <div *ngIf="faceApiResponse">
+    <app-table id="first" [faceApiResponse]="faceApiResponse"></app-table>
+  </div>
+</div>

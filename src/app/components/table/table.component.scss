@@ -1,0 +1,39 @@
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+
+html,
+body,
+.intro {
+    height: 100%;
+    width: 40%;
+}
+
+thead {
+    margin-bottom: 10px;
+    border-bottom: #fff solid 1px;
+}
+
+table td,
+table th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+thead th,
+tbody th {
+    color: #fff;
+}
+
+tbody td {
+    font-weight: 500;
+    color: rgba(255, 255, 255, .65);
+}
+
+.card {
+    border-radius: .5rem;
+}
+
+.container {
+    margin-top: 50px
+}

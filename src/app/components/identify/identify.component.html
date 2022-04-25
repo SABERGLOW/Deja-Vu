@@ -1,0 +1,58 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+
+<div class="container">
+  <div class="only-logo">
+    <div *ngIf="url; else elseBlock1">
+      <div class="wrapper">
+        <img id="pic" [src]="url" height="400" width="400" /><br />
+      </div>
+    </div>
+    <ng-template #elseBlock1>
+      <!--We added the path to file -->
+      <img
+        src="http://placehold.jp/262626/ffffff/400x400.png?text=Upload%20an%20image%20to%20Test%20Model%20Training&css=%7B%22border-radius%22%3A%2215px%22%7D"
+        alt="Upload Files"
+        height="400"
+        width="400"
+      />
+    </ng-template>
+  </div>
+
+  <!--Group Id -->
+  <mdb-form-control class="col-2 mx-auto">
+    <input mdbInput type="text" id="form1" class="form-control" #groupID />
+    <label mdbLabel class="form-label" for="form1">PersonGroup ID</label>
+  </mdb-form-control>
+
+  <!--Designing the Upload a file button -->
+  <div class="upload-btn-wrapper">
+    <a
+      class="btn-grad btn-primary col-2 mx-auto"
+      role="button"
+      (click)="uploader.click()"
+    >
+      Upload Image
+      <input
+        type="file"
+        accept="image/*"
+        #uploader
+        (change)="handleFileInput($event, groupID.value)"
+        multiple
+      />
+    </a>
+  </div>
+
+  <!--Printing the name in case of successful match -->
+  <div class="result col-4 mx-auto" *ngIf="matchName">
+    <p class="note note-success text-start font-monospace text-wrap">
+      <strong>Identified Name:</strong> {{ matchName }}
+    </p>
+    <br />
+    <p class="note note-success text-start font-monospace text-wrap">
+      <strong>User Data:</strong> {{ matchData }}
+    </p>
+  </div>
+</div>
