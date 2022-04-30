@@ -9,7 +9,9 @@ import { observable } from 'rxjs';
 })
 export class TrainComponent implements OnInit {
 
-  //vars to handle user inputs
+  /**
+   * main variables to handle user inputs         
+   */
   create_group_response: any;
   create_person_response: any;
   add_image_response: any;

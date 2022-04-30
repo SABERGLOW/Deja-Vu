@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "compodoc": "npx compodoc -p tsconfig.doc.json"
+    "compodoc": "npx compodoc -p tsconfig.doc.json --theme material -n \"Deja-Vu Documentation\" -a \"src/assets/images/\" --customFavicon \"src/favicon.ico\" --customLogo \"src/assets/images/Deja-Vu.png\" --hideGenerator -w -s"
   },
   "private": true,
   "dependencies": {

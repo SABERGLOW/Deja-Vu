@@ -2,7 +2,9 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
-// Http testing module and mocking controller
+/**
+ * Http testing module and mocking controller        
+ */
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 // Other imports
@@ -19,7 +21,9 @@ describe('HttpClient testing', () => {
       imports: [HttpClientTestingModule]
     });
 
-    // Inject the http service and test controller for each test
+    /**
+   * Inject the http service and test controller for each test
+   */
     httpClient = TestBed.get(HttpClient);
     httpTestingController = TestBed.get(HttpTestingController);
   });

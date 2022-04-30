@@ -31,6 +31,11 @@ export class DetectComponent implements OnInit {
     this.uploadedFile = event.target.files[0];
 
     this.data.detectFace_File(this.uploadedFile).subscribe(data => {
+      /**
+       * Takes in a face api response and stores it in the state.           
+       * @param {object} data - the face api response object.           
+       * @returns None           
+       */
       this.faceApiResponse = { ...data };
     },
       /**
