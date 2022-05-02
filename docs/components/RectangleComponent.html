@@ -69,6 +69,17 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>DISCLAIMER</p>
+<p>This class and its functions are referenced from an multiple Azure tutorials and guides on FACE API implementation</p>
+<p>For more details, kindly check here: <a href="https://social.technet.microsoft.com/wiki/contents/articles/37893.c-face-detection-and-recognition-with-azure-face-api.aspx">https://social.technet.microsoft.com/wiki/contents/articles/37893.c-face-detection-and-recognition-with-azure-face-api.aspx</a></p>
+<p>and here: <a href="https://gunnarpeipman.com/azure-face-detection/">https://gunnarpeipman.com/azure-face-detection/</a></p>
+<p>I take no credit for the implementation methods used in this file, except my own functions.</p>
+
+    </p>
 
 
     <p class="comment">
@@ -153,13 +164,13 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#styleRectangle" >styleRectangle</a>
-                            </li>
-                            <li>
                                 <a href="#drawRectangle" >drawRectangle</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#styleRectangle" >styleRectangle</a>
                             </li>
                         </ul>
                     </td>
@@ -204,7 +215,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:27</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:39</a></div>
                             </td>
                         </tr>
 
@@ -230,7 +241,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:37</a></div>
                             </td>
                         </tr>
                 <tr>
@@ -257,7 +268,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:39</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -278,7 +289,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:38</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -292,51 +303,6 @@
     <h3 id="methods">
         Methods
     </h3>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="styleRectangle"></a>
-                    <span class="name">
-                        <span ><b>styleRectangle</b></span>
-                        <a href="#styleRectangle"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>styleRectangle()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="75"
-                            class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:75</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-description"><p>Applies the rectangle to the page.</p>
-</div>
-
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        <p>None</p>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -357,15 +323,15 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="38"
-                            class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:38</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:50</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Gets the rectangle of the face.</p>
+                    <div class="io-description"><p>Gets the rectangle of the face. max 4 for now</p>
 </div>
 
                     <div>
@@ -402,8 +368,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="31"
-                            class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:31</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:43</a></div>
                 </td>
             </tr>
 
@@ -413,6 +379,51 @@
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="styleRectangle"></a>
+                    <span class="name">
+                        <span ><b>styleRectangle</b></span>
+                        <a href="#styleRectangle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>styleRectangle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Applies the rectangle to the page.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>None</p>
 
                     </div>
                 </td>
@@ -449,7 +460,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:28</a></div>
                         </td>
                     </tr>
 
@@ -486,7 +497,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/components/rectangle/rectangle.component.ts:23</a></div>
                         </td>
                     </tr>
 
@@ -501,6 +512,18 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Input } from &#x27;@angular/core&#x27;;
+
+/**
+ * DISCLAIMER          
+ * 
+ * This class and its functions are referenced from an multiple Azure tutorials and guides on FACE API implementation
+ * 
+ * For more details, kindly check here: https://social.technet.microsoft.com/wiki/contents/articles/37893.c-face-detection-and-recognition-with-azure-face-api.aspx
+ * 
+ * and here: https://gunnarpeipman.com/azure-face-detection/
+ * 
+ * I take no credit for the implementation methods used in this file, except my own functions.          
+ */
 
 @Component({
   selector: &#x27;app-rectangle&#x27;,
@@ -533,7 +556,7 @@ export class RectangleComponent implements OnInit {
   }
 
   /**
-   * Gets the rectangle of the face.           
+   * Gets the rectangle of the face. max 4 for now          
    * @returns None           
    */
   drawRectangle() {
@@ -597,6 +620,11 @@ export class RectangleComponent implements OnInit {
      */
     for (var j &#x3D; this.totalFaces + 1; j &lt;&#x3D; 4; j++) {
       let element2 &#x3D; document.getElementById(j.toString());
+      /**
+       * Hides the element if it exists.       
+       * @param {HTMLElement | null} element - the element to hide.       
+       * @returns None       
+       */
       if (element2 !&#x3D; null) {
         element2.style.display &#x3D; &quot;none&quot;;
       }
@@ -604,7 +632,26 @@ export class RectangleComponent implements OnInit {
   }
 
 }
-</code></pre>
+
+/**
+ * Some details on the implementation here
+ * 
+ * So, the &quot;faceApiResponse&quot; that we get back from Azure&#x27;s FACE API, contains multiple face attributes.
+ * 
+ * the first attribute is &quot;faceRectangle&quot;, and it looks something like this:
+ * 
+ * &quot;faceRectangle&quot;: {
+ *      &quot;top&quot;: 131,
+ *      &quot;left&quot;: 177,
+ *      &quot;width&quot;: 162,
+ *      &quot;height&quot;: 162
+ *    },
+ * 
+ * we take a rectangle var array, and push these faceRectangle attributes in it, and then call &quot;styleRectangle()&quot; on it.
+ * 
+ * for each face detected (max 4), we should apply 4 rectanlges, but since I want to keep it simple, I&#x27;m only drawing 1 rectangle and showing 1 table as a result only.        
+ * @returns None           
+ */</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">

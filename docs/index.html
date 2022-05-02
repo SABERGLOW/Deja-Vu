@@ -64,7 +64,96 @@
 <h2 id="documentation">Documentation</h2>
 <p>Developer Documentation is available through <code>compodoc</code>. The documentation website can be served locally by running <code>npm run compodoc</code>, and is accessible at <code>http://127.0.0.1:8080</code>.</p>
 <hr>
-
+<h2 id="sample-face-attrbutes-response">Sample Face Attrbutes Response</h2>
+<div><pre class="line-numbers"><code class="language-js">[
+  {
+    &quot;faceId&quot;: &quot;49d55c17-e018-4a42-ba7b-8cbbdfae7c6f&quot;,
+    &quot;faceRectangle&quot;: {
+      &quot;top&quot;: 131,
+      &quot;left&quot;: 177,
+      &quot;width&quot;: 162,
+      &quot;height&quot;: 162
+    },
+    &quot;faceAttributes&quot;: {
+      &quot;smile&quot;: 0,
+      &quot;headPose&quot;: {
+        &quot;pitch&quot;: 0,
+        &quot;roll&quot;: 0.1,
+        &quot;yaw&quot;: -32.9
+      },
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;age&quot;: 22.9,
+      &quot;facialHair&quot;: {
+        &quot;moustache&quot;: 0,
+        &quot;beard&quot;: 0,
+        &quot;sideburns&quot;: 0
+      },
+      &quot;glasses&quot;: &quot;NoGlasses&quot;,
+      &quot;emotion&quot;: {
+        &quot;anger&quot;: 0,
+        &quot;contempt&quot;: 0,
+        &quot;disgust&quot;: 0,
+        &quot;fear&quot;: 0,
+        &quot;happiness&quot;: 0,
+        &quot;neutral&quot;: 0.986,
+        &quot;sadness&quot;: 0.009,
+        &quot;surprise&quot;: 0.005
+      },
+      &quot;blur&quot;: {
+        &quot;blurLevel&quot;: &quot;low&quot;,
+        &quot;value&quot;: 0.06
+      },
+      &quot;exposure&quot;: {
+        &quot;exposureLevel&quot;: &quot;goodExposure&quot;,
+        &quot;value&quot;: 0.67
+      },
+      &quot;noise&quot;: {
+        &quot;noiseLevel&quot;: &quot;low&quot;,
+        &quot;value&quot;: 0
+      },
+      &quot;makeup&quot;: {
+        &quot;eyeMakeup&quot;: true,
+        &quot;lipMakeup&quot;: true
+      },
+      &quot;accessories&quot;: [],
+      &quot;occlusion&quot;: {
+        &quot;foreheadOccluded&quot;: false,
+        &quot;eyeOccluded&quot;: false,
+        &quot;mouthOccluded&quot;: false
+      },
+      &quot;hair&quot;: {
+        &quot;bald&quot;: 0,
+        &quot;invisible&quot;: false,
+        &quot;hairColor&quot;: [
+          {
+            &quot;color&quot;: &quot;brown&quot;,
+            &quot;confidence&quot;: 1
+          },
+          {
+            &quot;color&quot;: &quot;black&quot;,
+            &quot;confidence&quot;: 0.87
+          },
+          {
+            &quot;color&quot;: &quot;other&quot;,
+            &quot;confidence&quot;: 0.51
+          },
+          {
+            &quot;color&quot;: &quot;blond&quot;,
+            &quot;confidence&quot;: 0.08
+          },
+          {
+            &quot;color&quot;: &quot;red&quot;,
+            &quot;confidence&quot;: 0.08
+          },
+          {
+            &quot;color&quot;: &quot;gray&quot;,
+            &quot;confidence&quot;: 0.02
+          }
+        ]
+      }
+    }
+  }
+]</code></pre></div>
 
 
 
