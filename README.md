@@ -38,7 +38,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ---
 
-## Documentation
+## Documentation [![GitHub Pages Deployment](https://github.com/SABERGLOW/Deja-Vu/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/SABERGLOW/Deja-Vu/actions/workflows/pages/pages-build-deployment)
 
 Developer Documentation is available through `compodoc`. The documentation website can be served locally by running `npm run compodoc`, and is accessible at `http://127.0.0.1:8080`.
 
