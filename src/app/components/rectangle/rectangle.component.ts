@@ -1,6 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 
+/**
+ * DISCLAIMER          
+ * 
+ * This class and its functions are referenced from an multiple Azure tutorials and guides on FACE API implementation
+ * 
+ * For more details, kindly check here: https://social.technet.microsoft.com/wiki/contents/articles/37893.c-face-detection-and-recognition-with-azure-face-api.aspx
+ * 
+ * and here: https://gunnarpeipman.com/azure-face-detection/
+ * 
+ * I take no credit for the implementation methods used in this file, except my own functions.          
+ */
+
 @Component({
   selector: 'app-rectangle',
   templateUrl: './rectangle.component.html',
@@ -32,10 +44,10 @@ export class RectangleComponent implements OnInit {
   }
 
   /**
-   * Gets the rectangle of the face.           
+   * Gets the rectangle of the face. max 4 for now          
    * @returns None           
    */
-  getRectangle() {
+  drawRectangle() {
     this.totalFaces = 0;
     for (var i = 0; i < 4; i++) {
       if (this.faceApiResponse[i]) {
@@ -55,7 +67,7 @@ export class RectangleComponent implements OnInit {
      * Applies the rectangle filter to the page.       
      * @returns None       
      */
-    this.applyRectangle();
+    this.styleRectangle();
     /**
      * Returns a string that describes the number of faces detected.       
      * @returns {string} - A string that describes the number of faces detected.       
@@ -72,7 +84,7 @@ export class RectangleComponent implements OnInit {
    * Applies the rectangle to the page.           
    * @returns None           
    */
-  applyRectangle() {
+  styleRectangle() {
     /**
      * Updates the position of the faces on the screen.           
      * @returns None           
@@ -96,6 +108,11 @@ export class RectangleComponent implements OnInit {
      */
     for (var j = this.totalFaces + 1; j <= 4; j++) {
       let element2 = document.getElementById(j.toString());
+      /**
+       * Hides the element if it exists.       
+       * @param {HTMLElement | null} element - the element to hide.       
+       * @returns None       
+       */
       if (element2 != null) {
         element2.style.display = "none";
       }
@@ -103,3 +120,23 @@ export class RectangleComponent implements OnInit {
   }
 
 }
+
+/**
+ * Some details on the implementation here
+ * 
+ * So, the "faceApiResponse" that we get back from Azure's FACE API, contains multiple face attributes.
+ * 
+ * the first attribute is "faceRectangle", and it looks something like this:
+ * 
+ * "faceRectangle": {
+ *      "top": 131,
+ *      "left": 177,
+ *      "width": 162,
+ *      "height": 162
+ *    },
+ * 
+ * we take a rectangle var array, and push these faceRectangle attributes in it, and then call "styleRectangle()" on it.
+ * 
+ * for each face detected (max 4), we should apply 4 rectanlges, but since I want to keep it simple, I'm only drawing 1 rectangle and showing 1 table as a result only.        
+ * @returns None           
+ */

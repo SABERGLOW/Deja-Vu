@@ -62,7 +62,7 @@ export class IdentifyComponent implements OnInit {
       .then((data) => (this.matchId = data.body[0].candidates[0].personId));
 
     const getName = await this.data
-      .getPerson(group_id, this.matchId)
+      .getPersonFromPersonGroup(group_id, this.matchId)
       .toPromise()//colllect that person which belongs to this group_id and match_id
       .then((data) => {
         this.matchName = data.body['name'];

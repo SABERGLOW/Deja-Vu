@@ -1,0 +1,1041 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Deja-Vu Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Deja-Vu Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  DetectComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/detect/detect.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-detect</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./detect.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./detect.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#faceApiResponse" >faceApiResponse</a>
+                            </li>
+                            <li>
+                                <a href="#height" >height</a>
+                            </li>
+                            <li>
+                                <a href="#nbFaces" >nbFaces</a>
+                            </li>
+                            <li>
+                                <a href="#uploadedFile" >uploadedFile</a>
+                            </li>
+                            <li>
+                                <a href="#url" >url</a>
+                            </li>
+                            <li>
+                                <a href="#width" >width</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getHeight" >getHeight</a>
+                            </li>
+                            <li>
+                                <a href="#getPreview" >getPreview</a>
+                            </li>
+                            <li>
+                                <a href="#getWidth" >getWidth</a>
+                            </li>
+                            <li>
+                                <a href="#handleFileInput" >handleFileInput</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(data: <a href="../injectables/AzureFaceApiDataService.html" target="_self">AzureFaceApiDataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/detect/detect.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AzureFaceApiDataService.html" target="_self" >AzureFaceApiDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHeight"></a>
+                    <span class="name">
+                        <span ><b>getHeight</b></span>
+                        <a href="#getHeight"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getHeight()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/components/detect/detect.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the height of the image.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The height of the image.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPreview"></a>
+                    <span class="name">
+                        <span ><b>getPreview</b></span>
+                        <a href="#getPreview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPreview(file: File)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/components/detect/detect.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Takes in a file and returns the URL of the file.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+                                    <td>
+                                            <code>File</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>the file to get the URL of.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>None</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getWidth"></a>
+                    <span class="name">
+                        <span ><b>getWidth</b></span>
+                        <a href="#getWidth"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getWidth()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/components/detect/detect.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the width of the image.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The width of the image.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleFileInput"></a>
+                    <span class="name">
+                        <span ><b>handleFileInput</b></span>
+                        <a href="#handleFileInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleFileInput(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/components/detect/detect.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Handles the file input event.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>the event that triggered this function.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>None</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/components/detect/detect.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="faceApiResponse"></a>
+                    <span class="name">
+                        <span ><b>faceApiResponse</b></span>
+                        <a href="#faceApiResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/detect/detect.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="height"></a>
+                    <span class="name">
+                        <span ><b>height</b></span>
+                        <a href="#height"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/detect/detect.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nbFaces"></a>
+                    <span class="name">
+                        <span ><b>nbFaces</b></span>
+                        <a href="#nbFaces"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/detect/detect.component.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadedFile"></a>
+                    <span class="name">
+                        <span ><b>uploadedFile</b></span>
+                        <a href="#uploadedFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>File</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/detect/detect.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="url"></a>
+                    <span class="name">
+                        <span ><b>url</b></span>
+                        <a href="#url"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/detect/detect.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="width"></a>
+                    <span class="name">
+                        <span ><b>width</b></span>
+                        <a href="#width"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/detect/detect.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { AzureFaceApiDataService } from &#x27;../services/azure-face-api-data.service&#x27;;
+
+@Component({
+  selector: &#x27;app-detect&#x27;,
+  templateUrl: &#x27;./detect.component.html&#x27;,
+  styleUrls: [&#x27;./detect.component.scss&#x27;]
+})
+export class DetectComponent implements OnInit {
+
+  nbFaces &#x3D; 0;
+  uploadedFile: File &#x3D; null;
+  faceApiResponse: any;
+  url: any;
+  width: number;
+  height: number;
+
+  constructor(private data: AzureFaceApiDataService) { }
+
+  ngOnInit(): void {
+  }
+
+  /**
+   * Handles the file input event.           
+   * @param {Event} event - the event that triggered this function.           
+   * @returns None           
+   */
+  handleFileInput(event) {
+
+    this.nbFaces &#x3D; 0;
+    this.uploadedFile &#x3D; event.target.files[0];
+
+    this.data.detectFace_File(this.uploadedFile).subscribe(data &#x3D;&gt; {
+      /**
+       * Takes in a face api response and stores it in the state.           
+       * @param {object} data - the face api response object.           
+       * @returns None           
+       */
+      this.faceApiResponse &#x3D; { ...data };
+    },
+      /**
+       * Takes in an error and logs it to the console.       
+       * @param {Error} error - the error to log       
+       * @returns None       
+       */
+      error &#x3D;&gt; console.log(error));
+    this.getPreview(this.uploadedFile);
+  }
+
+  /**
+   * Takes in a file and returns the URL of the file.           
+   * @param {File} file - the file to get the URL of.           
+   * @returns None           
+   */
+  getPreview(file: File) {
+    var reader &#x3D; new FileReader();
+
+    /**
+     * Reads the file as a data URL and calls the callback with the data URL.           
+     * @param {File} file - the file to read.           
+     * @returns None           
+     */
+    reader.readAsDataURL(file);
+
+    reader.onload &#x3D; (event) &#x3D;&gt; {
+      this.url &#x3D; (&lt;FileReader&gt;event.target).result;
+    }
+  }
+
+
+  /**
+   * Gets the height of the image.           
+   * @returns {number} The height of the image.           
+   */
+  getHeight() {
+    var image &#x3D; document.getElementById(&#x27;pic&#x27;) as HTMLImageElement; //this will get the actual dimensions of the visible image
+    this.height &#x3D; image.naturalHeight;
+    return this.height;
+  }
+
+  /**
+   * Get the width of the image.           
+   * @returns {number} The width of the image.           
+   */
+  getWidth() {
+    var image &#x3D; document.getElementById(&#x27;pic&#x27;) as HTMLImageElement;//Get the image element from the page.
+    /**
+     * Sets the width of the image to the natural width of the image.           
+     * @param {HTMLImageElement} image - the image to set the width of.           
+     * @returns None           
+     */
+    this.width &#x3D; image.naturalWidth;
+    return this.width;
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;link
+  href&#x3D;&quot;https://fonts.googleapis.com/css?family&#x3D;Roboto:300,400,500,700&amp;display&#x3D;swap&quot;
+  rel&#x3D;&quot;stylesheet&quot;
+/&gt;
+
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;only-logo&quot;&gt;
+    &lt;!--ngid is known as Selector such as conditional statement that return true and false : angular language--&gt;
+    &lt;div *ngIf&#x3D;&quot;url; else elseBlock1&quot;&gt;
+      &lt;div class&#x3D;&quot;wrapper&quot;&gt;
+        &lt;img id&#x3D;&quot;pic&quot; [src]&#x3D;&quot;url&quot; height&#x3D;&quot;400&quot; width&#x3D;&quot;400&quot; /&gt;&lt;br /&gt;
+        &lt;div *ngIf&#x3D;&quot;faceApiResponse&quot;&gt;
+          &lt;app-rectangle
+            [faceApiResponse]&#x3D;&quot;faceApiResponse&quot;
+            [height]&#x3D;&quot;getHeight()&quot;
+            [width]&#x3D;&quot;getWidth()&quot;
+          &gt;&lt;/app-rectangle&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--Assiging the png file at the place of face detection--&gt;
+    &lt;ng-template #elseBlock1&gt;
+      &lt;img
+        src&#x3D;&quot;http://placehold.jp/262626/ffffff/400x400.png?text&#x3D;Upload%20an%20image%20to%20Detect%20a%20Face&amp;css&#x3D;%7B%22border-radius%22%3A%2215px%22%7D&quot;
+        alt&#x3D;&quot;Upload Files&quot;
+        height&#x3D;&quot;400&quot;
+        width&#x3D;&quot;400&quot;
+      /&gt;
+    &lt;/ng-template&gt;
+  &lt;/div&gt;
+
+  &lt;!--Designing the Upload a file button --&gt;
+  &lt;div class&#x3D;&quot;upload-btn-wrapper&quot;&gt;
+    &lt;a
+      class&#x3D;&quot;btn-grad btn-primary col-2 mx-auto&quot;
+      role&#x3D;&quot;button&quot;
+      (click)&#x3D;&quot;uploader.click()&quot;
+    &gt;
+      Upload Image
+      &lt;input
+        type&#x3D;&quot;file&quot;
+        accept&#x3D;&quot;image/*&quot;
+        #uploader
+        (change)&#x3D;&quot;handleFileInput($event)&quot;
+        multiple
+      /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!--Designing the Response in table  file Format --&gt;
+  &lt;div *ngIf&#x3D;&quot;faceApiResponse&quot;&gt;
+    &lt;app-table id&#x3D;&quot;first&quot; [faceApiResponse]&#x3D;&quot;faceApiResponse&quot;&gt;&lt;/app-table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./detect.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;~bootstrap/dist/css/bootstrap.css&quot;;
+@import &quot;~mdb-angular-ui-kit/assets/scss/mdb.scss&quot;;
+
+img {
+    border-radius: 15px;
+    padding: 1px;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.only-logo {
+    padding-bottom: 1em;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.upload-btn-wrapper {
+    margin-top: 5px;
+}
+
+.upload-btn-wrapper input[type&#x3D;file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+body {
+    text-align: center !important;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #ff76b4 0%, #66f1ff 51%, #ff76b4 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #262626;
+    box-shadow: 0 0 20px #ffffff;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet"/><div class="container">  <div class="only-logo">    <!--ngid is known as Selector such as conditional statement that return true and false : angular language-->    <div *ngIf="url; else elseBlock1">      <div class="wrapper">        <img id="pic" [src]="url" height="400" width="400" /><br />        <div *ngIf="faceApiResponse">          <app-rectangle            [faceApiResponse]="faceApiResponse"            [height]="getHeight()"            [width]="getWidth()"          ></app-rectangle>        </div>      </div>    </div>    <!--Assiging the png file at the place of face detection-->    <ng-template #elseBlock1>      <img        src="http://placehold.jp/262626/ffffff/400x400.png?text=Upload%20an%20image%20to%20Detect%20a%20Face&css=%7B%22border-radius%22%3A%2215px%22%7D"        alt="Upload Files"        height="400"        width="400"      />    </ng-template>  </div>  <!--Designing the Upload a file button -->  <div class="upload-btn-wrapper">    <a      class="btn-grad btn-primary col-2 mx-auto"      role="button"      (click)="uploader.click()"    >      Upload Image      <input        type="file"        accept="image/*"        #uploader        (change)="handleFileInput($event)"        multiple      />    </a>  </div>  <!--Designing the Response in table  file Format -->  <div *ngIf="faceApiResponse">    <app-table id="first" [faceApiResponse]="faceApiResponse"></app-table>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DetectComponent', 'selector': 'app-detect'},{'name': 'IdentifyComponent', 'selector': 'app-identify'},{'name': 'RectangleComponent', 'selector': 'app-rectangle'},{'name': 'TableComponent', 'selector': 'app-table'},{'name': 'TrainComponent', 'selector': 'app-train'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DetectComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DetectComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

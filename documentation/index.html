@@ -1,0 +1,235 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Deja-Vu Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	   <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/dark.css">
+        <link rel="stylesheet" href="./styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">Deja-Vu Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 align="center">Deja-Vu</h1>
+
+<p align="center">
+
+<img src="https://socialify.git.ci/SABERGLOW/Deja-Vu/image?description=1&descriptionEditable=A%20facial%20recognition%2Fdetection%20app%20with%20Angular%20using%20Microsoft%27s%20Face%20API&font=Raleway&forks=1&issues=1&language=1&logo=https%3A%2F%2Fgithub.com%2FSABERGLOW%2FDeja-Vu%2Fblob%2Fmain%2Fsrc%2Fassets%2Fimages%2FDeja-Vu.png%3Fraw%3Dtrue&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="Deja-Vu Banner">
+
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<hr>
+<h1 id="overview">Overview</h1>
+<p>Deja-Vu is a client side application generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13. The core function of this application is to detect, recognize and analyze human faces by uploading images to the web application with the help of Micrsoft&#39;s Face API; An AI service that analyzes faces in images. Face API&#39;s features include face detection that perceives facial features and attributes—such as a face mask, glasses, or face location—in an image, and identification of a person by a match to your private repository or via photo ID.</p>
+<hr>
+<h1 id="tech-stack">Tech Stack</h1>
+<p>The application is built using following technologies:</p>
+<ul>
+<li><strong><a href="https://angular.io/">Angular 13</a></strong></li>
+<li><strong><a href="https://mdbootstrap.com/docs/b5/angular/">MDB (Material Design for Bootstrap 5 &amp; Angular 13)</a></strong></li>
+<li><strong><a href="https://azure.microsoft.com/en-us/services/cognitive-services/face/">Face API</a></strong></li>
+<li><strong><a href="https://compodoc.app/">Compodoc</a></strong></li>
+</ul>
+<hr>
+<h2 id="development-server">Development server</h2>
+<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The application will automatically reload if you change any of the source files.</p>
+<h2 id="build">Build</h2>
+<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</p>
+<hr>
+<h2 id="documentation">Documentation</h2>
+<p>Developer Documentation is available through <code>compodoc</code>. The documentation website can be served locally by running <code>npm run compodoc</code>, and is accessible at <code>http://127.0.0.1:8080</code>.</p>
+<hr>
+<h2 id="sample-face-attrbutes-response">Sample Face Attrbutes Response</h2>
+<div><pre class="line-numbers"><code class="language-js">[
+  {
+    &quot;faceId&quot;: &quot;49d55c17-e018-4a42-ba7b-8cbbdfae7c6f&quot;,
+    &quot;faceRectangle&quot;: {
+      &quot;top&quot;: 131,
+      &quot;left&quot;: 177,
+      &quot;width&quot;: 162,
+      &quot;height&quot;: 162
+    },
+    &quot;faceAttributes&quot;: {
+      &quot;smile&quot;: 0,
+      &quot;headPose&quot;: {
+        &quot;pitch&quot;: 0,
+        &quot;roll&quot;: 0.1,
+        &quot;yaw&quot;: -32.9
+      },
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;age&quot;: 22.9,
+      &quot;facialHair&quot;: {
+        &quot;moustache&quot;: 0,
+        &quot;beard&quot;: 0,
+        &quot;sideburns&quot;: 0
+      },
+      &quot;glasses&quot;: &quot;NoGlasses&quot;,
+      &quot;emotion&quot;: {
+        &quot;anger&quot;: 0,
+        &quot;contempt&quot;: 0,
+        &quot;disgust&quot;: 0,
+        &quot;fear&quot;: 0,
+        &quot;happiness&quot;: 0,
+        &quot;neutral&quot;: 0.986,
+        &quot;sadness&quot;: 0.009,
+        &quot;surprise&quot;: 0.005
+      },
+      &quot;blur&quot;: {
+        &quot;blurLevel&quot;: &quot;low&quot;,
+        &quot;value&quot;: 0.06
+      },
+      &quot;exposure&quot;: {
+        &quot;exposureLevel&quot;: &quot;goodExposure&quot;,
+        &quot;value&quot;: 0.67
+      },
+      &quot;noise&quot;: {
+        &quot;noiseLevel&quot;: &quot;low&quot;,
+        &quot;value&quot;: 0
+      },
+      &quot;makeup&quot;: {
+        &quot;eyeMakeup&quot;: true,
+        &quot;lipMakeup&quot;: true
+      },
+      &quot;accessories&quot;: [],
+      &quot;occlusion&quot;: {
+        &quot;foreheadOccluded&quot;: false,
+        &quot;eyeOccluded&quot;: false,
+        &quot;mouthOccluded&quot;: false
+      },
+      &quot;hair&quot;: {
+        &quot;bald&quot;: 0,
+        &quot;invisible&quot;: false,
+        &quot;hairColor&quot;: [
+          {
+            &quot;color&quot;: &quot;brown&quot;,
+            &quot;confidence&quot;: 1
+          },
+          {
+            &quot;color&quot;: &quot;black&quot;,
+            &quot;confidence&quot;: 0.87
+          },
+          {
+            &quot;color&quot;: &quot;other&quot;,
+            &quot;confidence&quot;: 0.51
+          },
+          {
+            &quot;color&quot;: &quot;blond&quot;,
+            &quot;confidence&quot;: 0.08
+          },
+          {
+            &quot;color&quot;: &quot;red&quot;,
+            &quot;confidence&quot;: 0.08
+          },
+          {
+            &quot;color&quot;: &quot;gray&quot;,
+            &quot;confidence&quot;: 0.02
+          }
+        ]
+      }
+    }
+  }
+]</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+
+       <script src="./js/menu-wc.js" defer></script>
+       <script nomodule src="./js/menu-wc_es5.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

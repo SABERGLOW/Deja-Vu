@@ -64,7 +64,7 @@ export class TrainComponent implements OnInit {
    * @returns None           
    */
   addImage(group_id: string, image: File, personID: string) {
-    this.data.addPersonImage(group_id, image, personID).subscribe(res => { this.add_image_response = res.body }, error => console.log(error));
+    this.data.addPersonImageToPersonGroup(group_id, image, personID).subscribe(res => { this.add_image_response = res.body }, error => console.log(error));
   }
 
   /**
@@ -73,8 +73,8 @@ export class TrainComponent implements OnInit {
    * @param {string} personID - the ID of the person to get           
    * @returns None           
    */
-  getPerson(groupID: string, personID: string) {
-    this.data.getPerson(groupID, personID).subscribe(res => { this.get_person_response = res.body }, error => console.log(error));
+  getPersonFromPersonGroup(groupID: string, personID: string) {
+    this.data.getPersonFromPersonGroup(groupID, personID).subscribe(res => { this.get_person_response = res.body }, error => console.log(error));
   }
 
   /**
@@ -82,8 +82,8 @@ export class TrainComponent implements OnInit {
    * @param {string} group_id - the id of the group to train           
    * @returns None           
    */
-  trainGroup(group_id: string) {
-    this.data.trainGroup(group_id).subscribe(res => { this.train_response = res.status, console.log(res) }, error => console.log(error));
+  trainPersonGroup(group_id: string) {
+    this.data.trainPersonGroup(group_id).subscribe(res => { this.train_response = res.status, console.log(res) }, error => console.log(error));
   }
 
 }

@@ -80,7 +80,7 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#detectFaceUrl" >detectFaceUrl</a>
+                                <a href="#faceDetectionURL" >faceDetectionURL</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
@@ -88,7 +88,7 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#faceIdentifyUrl" >faceIdentifyUrl</a>
+                                <a href="#faceIdentificationURL" >faceIdentificationURL</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
@@ -96,7 +96,7 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#personGroupsUrl" >personGroupsUrl</a>
+                                <a href="#personGroupURL" >personGroupURL</a>
                             </li>
                             <li>
                                 <a href="#response" >response</a>
@@ -114,7 +114,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#addPersonImage" >addPersonImage</a>
+                                <a href="#addPersonImageToPersonGroup" >addPersonImageToPersonGroup</a>
                             </li>
                             <li>
                                 <a href="#createPerson" >createPerson</a>
@@ -137,13 +137,13 @@
                                 <a href="#getHeaders" >getHeaders</a>
                             </li>
                             <li>
-                                <a href="#getPerson" >getPerson</a>
+                                <a href="#getPersonFromPersonGroup" >getPersonFromPersonGroup</a>
                             </li>
                             <li>
                                 <a href="#getPersonFace" >getPersonFace</a>
                             </li>
                             <li>
-                                <a href="#trainGroup" >trainGroup</a>
+                                <a href="#trainPersonGroup" >trainPersonGroup</a>
                             </li>
                         </ul>
                     </td>
@@ -215,16 +215,16 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="addPersonImage"></a>
+                    <a name="addPersonImageToPersonGroup"></a>
                     <span class="name">
-                        <span ><b>addPersonImage</b></span>
-                        <a href="#addPersonImage"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>addPersonImageToPersonGroup</b></span>
+                        <a href="#addPersonImageToPersonGroup"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>addPersonImage(group_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, image: File, personID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>addPersonImageToPersonGroup(group_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, image: File, personID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
@@ -837,16 +837,16 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getPerson"></a>
+                    <a name="getPersonFromPersonGroup"></a>
                     <span class="name">
-                        <span ><b>getPerson</b></span>
-                        <a href="#getPerson"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getPersonFromPersonGroup</b></span>
+                        <a href="#getPersonFromPersonGroup"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getPerson(group_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, _personID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>getPersonFromPersonGroup(group_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, _personID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
@@ -1053,16 +1053,16 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="trainGroup"></a>
+                    <a name="trainPersonGroup"></a>
                     <span class="name">
-                        <span ><b>trainGroup</b></span>
-                        <a href="#trainGroup"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>trainPersonGroup</b></span>
+                        <a href="#trainPersonGroup"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>trainGroup(group_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>trainPersonGroup(group_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
@@ -1138,11 +1138,11 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="detectFaceUrl"></a>
+                    <a name="faceDetectionURL"></a>
                     <span class="name">
                             <span class="modifier">Private</span>
-                        <span ><b>detectFaceUrl</b></span>
-                        <a href="#detectFaceUrl"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>faceDetectionURL</b></span>
+                        <a href="#faceDetectionURL"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -1202,11 +1202,11 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="faceIdentifyUrl"></a>
+                    <a name="faceIdentificationURL"></a>
                     <span class="name">
                             <span class="modifier">Private</span>
-                        <span ><b>faceIdentifyUrl</b></span>
-                        <a href="#faceIdentifyUrl"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>faceIdentificationURL</b></span>
+                        <a href="#faceIdentificationURL"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -1266,11 +1266,11 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="personGroupsUrl"></a>
+                    <a name="personGroupURL"></a>
                     <span class="name">
                             <span class="modifier">Private</span>
-                        <span ><b>personGroupsUrl</b></span>
-                        <a href="#personGroupsUrl"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>personGroupURL</b></span>
+                        <a href="#personGroupURL"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -1351,19 +1351,19 @@ export class AzureFaceApiDataService {
    * The URL for the face detection API.       
    * @returns {string} The URL for the face detection API.       
    */
-  private detectFaceUrl &#x3D; this.endpoint + &quot;face/v1.0/detect?returnFaceAttributes&#x3D;age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise&quot;;
+  private faceDetectionURL &#x3D; this.endpoint + &quot;face/v1.0/detect?returnFaceAttributes&#x3D;age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise&quot;;
 
   /**
    * The URL for the person groups endpoint.       
    * @returns {string} The URL for the person groups endpoint.       
    */
-  private personGroupsUrl &#x3D; this.endpoint + &#x27;/face/v1.0/persongroups/&#x27;;
+  private personGroupURL &#x3D; this.endpoint + &#x27;/face/v1.0/persongroups/&#x27;;
 
   /**
    * The URL for the Face API Identify API.           
    * @returns {string} The URL for the Face API Identify API.           
    */
-  private faceIdentifyUrl &#x3D; this.endpoint + &#x27;/face/v1.0/identify&#x27;;
+  private faceIdentificationURL &#x3D; this.endpoint + &#x27;/face/v1.0/identify&#x27;;
 
 
   constructor(private http: HttpClient) { }
@@ -1396,7 +1396,7 @@ export class AzureFaceApiDataService {
    * @returns {Observable&lt;any&gt;} - an observable that returns the response from the server.           
    */
   detectFace_File(image: File) {
-    return this.http.post&lt;any&gt;(this.detectFaceUrl, image, {
+    return this.http.post&lt;any&gt;(this.faceDetectionURL, image, {
       headers: this.get_Image_Upload_Headers(),
     });
   }
@@ -1410,7 +1410,7 @@ export class AzureFaceApiDataService {
    */
   createPersonGroup(group_name: string, _name: string, _userData: string) {
     return this.http.put&lt;any&gt;(
-      this.personGroupsUrl + group_name,
+      this.personGroupURL + group_name,
       { name: _name, userData: _userData },
       { headers: this.getHeaders(), responseType: &#x27;json&#x27;, observe: &#x27;response&#x27; }
     );
@@ -1425,7 +1425,7 @@ export class AzureFaceApiDataService {
    */
   createPerson(group_id: string, _name: string, _userData: string) {
     return this.http.post&lt;any&gt;(
-      this.personGroupsUrl + group_id + &#x27;/persons/&#x27;,
+      this.personGroupURL + group_id + &#x27;/persons/&#x27;,
       { name: _name, userData: _userData },
       { headers: this.getHeaders(), responseType: &#x27;json&#x27;, observe: &#x27;response&#x27; }
     );
@@ -1438,9 +1438,9 @@ export class AzureFaceApiDataService {
    * @param {string} personID - the id of the person           
    * @returns None           
    */
-  addPersonImage(group_id: string, image: File, personID: string) {
+  addPersonImageToPersonGroup(group_id: string, image: File, personID: string) {
     return this.http.post&lt;any&gt;(
-      this.personGroupsUrl +
+      this.personGroupURL +
       group_id +
       &#x27;/persons/&#x27; +
       personID +
@@ -1461,9 +1461,9 @@ export class AzureFaceApiDataService {
    * @param {string} _personID - the id of the person           
    * @returns {Observable&lt;any&gt;} - the person           
    */
-  getPerson(group_id: string, _personID: string) {
+  getPersonFromPersonGroup(group_id: string, _personID: string) {
     return this.http.get&lt;any&gt;(
-      this.personGroupsUrl + group_id + &#x27;/persons/&#x27; + _personID,
+      this.personGroupURL + group_id + &#x27;/persons/&#x27; + _personID,
       { headers: this.getHeaders(), responseType: &#x27;json&#x27;, observe: &#x27;response&#x27; }
     );
   }
@@ -1481,7 +1481,7 @@ export class AzureFaceApiDataService {
     _persistedFaceID: string
   ) {
     return this.http.get&lt;any&gt;(
-      this.personGroupsUrl +
+      this.personGroupURL +
       _personGroupID +
       &#x27;/persons/&#x27; +
       _personID +
@@ -1496,9 +1496,9 @@ export class AzureFaceApiDataService {
    * @param {string} group_id - the group id to train       
    * @returns None       
    */
-  trainGroup(group_id: string) {
+  trainPersonGroup(group_id: string) {
     return this.http.post&lt;any&gt;(
-      this.personGroupsUrl + group_id + &#x27;/train&#x27;,
+      this.personGroupURL + group_id + &#x27;/train&#x27;,
       {},
       { headers: this.getHeaders(), responseType: &#x27;json&#x27;, observe: &#x27;response&#x27; }
     );
@@ -1513,7 +1513,7 @@ export class AzureFaceApiDataService {
    */
   faceIdentify(group_id: string, _faceIds: string[]) {
     return this.http.post&lt;any&gt;(
-      this.faceIdentifyUrl,
+      this.faceIdentificationURL,
       { faceIds: _faceIds, personGroupId: group_id },
       { headers: this.getHeaders(), responseType: &#x27;json&#x27;, observe: &#x27;response&#x27; }
     );

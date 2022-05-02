@@ -159,6 +159,15 @@
                     {{ faceApiResponse[0]?.faceAttributes?.makeup?.lipMakeup }}
                   </td>
                 </tr>
+
+                <tr>
+                  <th>Bald</th>
+                  <td>
+                    {{ faceApiResponse[0]?.faceAttributes?.hair?.bald | percent }}
+                  </td>
+                </tr>
+
+
               </tbody>
             </table>
           </div>
