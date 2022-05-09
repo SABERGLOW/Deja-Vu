@@ -17,6 +17,19 @@ Deja-Vu is a client side application generated with [Angular CLI](https://github
 
 ---
 
+# Features and Capabilities
+
+The application is capable of following functionalities, with room for improvement:
+
+- **Detect:** Facial features and attributes of a single person can be detected by uploading an image.
+- **Train:** A Person Group can be creaeted, withinn which, a Person can be created and his/her images can be trained.
+- **Identify:** A person can be identified from a pre-existing and pre-trained Person Group.
+
+*For more detail, please refer to [Azure Face API documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/face/).*
+*PRs and Contributions are welcome.*
+
+---
+
 # Tech Stack
 
 The application is built using following technologies:
@@ -25,6 +38,18 @@ The application is built using following technologies:
 - **[MDB (Material Design for Bootstrap 5 & Angular 13)](https://mdbootstrap.com/docs/b5/angular/)**
 - **[Face API](https://azure.microsoft.com/en-us/services/cognitive-services/face/)**
 - **[Compodoc](https://compodoc.app/)**
+
+---
+
+# Project Structure
+
+A general overlay of Project Structure and it's components and assets.
+
+<p align="left">
+
+<img src="./src/assets/images/ProjectStructureTree.png" alt="Project Structure" width="30%"/>
+
+</p>
 
 ---
 
