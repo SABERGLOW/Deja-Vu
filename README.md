@@ -47,7 +47,7 @@ A general overlay of Project Structure and it's components and assets.
 
 <p align="left">
 
-<img src="./src/assets/images/ProjectStructureTree.png" alt="Project Structure" width="30%"/>
+<img src="./src/assets/images/ProjectStructureTree.png" alt="Project Structure" width="40%"/>
 
 </p>
 
