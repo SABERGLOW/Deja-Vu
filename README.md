@@ -13,7 +13,7 @@
 
 # Overview
 
-Deja-Vu is a client side application generated with [Angular CLI](https://github.com/angular/angular-cli) version 13. The core function of this application is to detect, recognize and analyze human faces by uploading images to the web application with the help of Micrsoft's Face API; An AI service that analyzes faces in images. Face API's features include face detection that perceives facial features and attributes—such as a face mask, glasses, or face location—in an image, and identification of a person by a match to your private repository or via photo ID.
+Deja-Vu is a client side application generated with [Angular CLI](https://github.com/angular/angular-cli) version 13. The core function of this application is to detect, recognize and analyze human faces by uploading images to the web application with the help of Microsoft's Face API; An AI service that analyzes faces in images. Face API's features include face detection that perceives facial features and attributes—such as a face mask, glasses, or face location—in an image, and identification of a person by a match to your private repository or via photo ID.
 
 ---
 
